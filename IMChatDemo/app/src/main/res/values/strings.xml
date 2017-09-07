@@ -1,8 +1,5 @@
 <resources>
-    <string name="app_name">Ratting_litter</string>
-
-
-
+    <string name="app_name">IM通信</string>
     <string name="app_slogon">即时通讯服务</string>
     <string name="text_ack_msg">读</string>
     <string name="text_delivered_msg">交付</string>

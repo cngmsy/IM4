@@ -1,4 +1,4 @@
-package com.route.test.imchatdemo;
+package com.route.test.imchatdemo.activity;
 
 import android.app.ProgressDialog;
 import android.text.TextUtils;
@@ -9,6 +9,7 @@ import android.widget.Toast;
 import com.hyphenate.EMError;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.exceptions.HyphenateException;
+import com.route.test.imchatdemo.R;
 import com.route.test.imchatdemo.base.BaseActivity;
 
 public class RegisterActivity extends BaseActivity {
