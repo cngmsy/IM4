@@ -1,9 +1,10 @@
-package com.route.test.imchatdemo;
+package com.route.test.imchatdemo.ui;
 
 import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
 
+import com.route.test.imchatdemo.R;
 import com.route.test.imchatdemo.base.BaseActivity;
 
 public class LoginActivity extends BaseActivity {

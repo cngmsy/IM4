@@ -1,9 +1,10 @@
-package com.route.test.imchatdemo;
+package com.route.test.imchatdemo.ui;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 
+import com.route.test.imchatdemo.R;
 import com.route.test.imchatdemo.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
