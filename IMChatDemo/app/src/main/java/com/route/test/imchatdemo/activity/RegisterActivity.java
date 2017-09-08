@@ -1,4 +1,4 @@
-package com.route.test.imchatdemo;
+package com.route.test.imchatdemo.activity;
 
 import android.app.ProgressDialog;
 import android.text.TextUtils;
@@ -9,6 +9,7 @@ import android.widget.Toast;
 import com.hyphenate.EMError;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.exceptions.HyphenateException;
+import com.route.test.imchatdemo.R;
 import com.route.test.imchatdemo.base.BaseActivity;
 
 public class RegisterActivity extends BaseActivity {
@@ -67,7 +68,6 @@ public class RegisterActivity extends BaseActivity {
                             public void run() {
                                 if (!RegisterActivity.this.isFinishing())
                                     pd.dismiss();
-
                                 Toast.makeText(getApplicationContext(),"注册成功", Toast.LENGTH_SHORT).show();
                                 finish();
                             }
@@ -98,7 +98,5 @@ public class RegisterActivity extends BaseActivity {
             Toast.makeText(RegisterActivity.this, "用户名或密码不能为空", Toast.LENGTH_SHORT).show();
         }
     }
-    public void back(View view) {
-        finish();
-    }
+
 }

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bluesky">
+        <TextView
+            android:textColor="@color/write"
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会话"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/MainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rg">
+        <RadioButton
+            android:id="@+id/rb_chat"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:drawableTop="@drawable/em_tab_chat_bg"
+            android:gravity="center"
+            android:background="@drawable/em_main_bottom_item_bg"
+            android:checked="true"
+            android:text="会话"
+            android:textColor="@color/em_main_botton_text_color"
+            android:textSize="12sp"/>
+        <RadioButton
+            android:id="@+id/rb_friends"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:drawableTop="@drawable/em_tab_chat_bg"
+            android:gravity="center"
+            android:background="@drawable/em_main_bottom_item_bg"
+            android:text="通讯录"
+            android:textColor="@color/em_main_botton_text_color"
+            android:textSize="12sp"/>
+        <RadioButton
+            android:id="@+id/rb_set"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:drawableTop="@drawable/em_tab_chat_bg"
+            android:gravity="center"
+            android:background="@drawable/em_main_bottom_item_bg"
+            android:text="设置"
+            android:textColor="@color/em_main_botton_text_color"
+            android:textSize="12sp"/>
+    </RadioGroup>
+
+</LinearLayout>
