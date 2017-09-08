@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">IM通信</string>
+    <string name="app_name">IMChatDemo</string>
     <string name="app_slogon">即时通讯服务</string>
     <string name="text_ack_msg">读</string>
     <string name="text_delivered_msg">交付</string>
@@ -168,9 +168,9 @@
     <string name="The_other_party_did_not_answer">The peer did not answer</string>
     <string name="did_not_answer">did not answer</string>
     <string name="Has_been_cancelled">Cancelled</string>
-    <string name="call_version_inconsistent">Both call version are inconsistent</string>
-    <string name="unable_to_get_loaction">Unable to get to your location information!</string>
-    <string name="not_connect_to_server">Not connect to server, please try again later</string>
+    <string name="call_version_inconsistent">调用的版本都是不一致的</string>
+    <string name="unable_to_get_loaction">无法到达你的位置信息!</string>
+    <string name="not_connect_to_server">不能连接到服务器,请稍后再试</string>
     <string name="sd_card_does_not_exist">"SD card does not exist, can't take pictures"</string>
     <string name="cant_find_pictures">"Can't find pictures"</string>
     <string name="File_does_not_exist">File does not exist</string>
@@ -180,17 +180,17 @@
     <string name="Recording_without_permission">Recording without permission</string>
     <string name="The_recording_time_is_too_short">The recording time is too short</string>
     <string name="send_failure_please">Send failure, please test whether the server connection</string>
-    <string name="Move_into_blacklist_success">Move into blacklist success</string>
-    <string name="Move_into_blacklist_failure">Move into blacklist failure</string>
-    <string name="you_are_group">You have been kicked off from the group</string>
-    <string name="the_current_group">The current group has been dismissed</string>
-    <string name="Cant_chat_with_yourself">cannot chat with yourself</string>
+    <string name="Move_into_blacklist_success">成功进入黑名单</string>
+    <string name="Move_into_blacklist_failure">进入黑名单失败</string>
+    <string name="you_are_group">你已经开始从组</string>
+    <string name="the_current_group">目前集团已被解雇</string>
+    <string name="Cant_chat_with_yourself">不能和你聊天</string>
     <string name="deleting">Deleting..</string>
     <string name="Delete_failed">Failed to delete</string>
-    <string name="Is_moved_into_blacklist">Moving to blacklist..</string>
-    <string name="Log_uploaded_successfully">Log was uploaded successfully</string>
-    <string name="Log_Upload_failed">Failed to upload the log</string>
-    <string name="get_failed_please_check">Failed to retrieve, please check the network or try again later</string>
+    <string name="Is_moved_into_blacklist">搬到黑名单..</string>
+    <string name="Log_uploaded_successfully">日志已成功上传</string>
+    <string name="Log_Upload_failed">未能上传日志</string>
+    <string name="get_failed_please_check">检索失败,请检查网络或稍后再试</string>
     <string name="people">people</string>
     <string name="being_added">added</string>
     <string name="is_quit_the_group_chat">Exiting group</string>
@@ -198,8 +198,8 @@
     <string name="are_empty_group_of_news">Clearing messages</string>
     <string name="messages_are_empty">Messages has been cleared</string>
     <string name="is_modify_the_group_name">Modifying the group name..</string>
-    <string name="is_modify_the_group_description">Modifying the group description..</string>
-    <string name="Modify_the_group_name_successful">Modify the group name successful</string>
+    <string name="is_modify_the_group_description">修改组描述..</string>
+    <string name="Modify_the_group_name_successful">修改组名称成功</string>
     <string name="Modify_the_group_description_successful">Modify the group description successful</string>
     <string name="Modify_the_group_extension_successful">Modify the group extension successful</string>
     <string name="change_the_group_name_failed_please">Failed to change the group name, please check the network or try again later</string>

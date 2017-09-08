@@ -103,8 +103,8 @@ public class LoginActivity extends BaseActivity {
         pd.setMessage(getString(R.string.Is_landing));
         pd.show();
 
-        // After logout，the DemoDB may still be accessed due to async callback, so the DemoDB will be re-opened again.
-        // close it before login to make sure DemoDB not overlap
+        // 注销后,演示D B可能仍然访问由于异步回调,所以演示D B将再次重启
+        // 登录之前关闭它,以确保演示D B不重叠
 
 
 
