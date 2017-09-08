@@ -29,10 +29,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.MainActivity">
 
-        </activity>
-        <activity android:name=".ui.LoginActivity"></activity>
+        <activity android:name=".activity.LoginActivity"></activity>
 
         <!-- 设置环信应用的AppKey -->
         <meta-data
@@ -59,8 +57,12 @@
                 <action android:name="android.intent.action.USER_PRESENT" />
             </intent-filter>
         </receiver>
-        <activity android:name=".ui.RegisterActivity"/>
-        <activity android:name=".ui.HomeActivity">
+
+        <activity android:name=".activity.HomeActivity"/>
+
+        <activity android:name=".activity.RegisterActivity"/>
+        <activity android:name=".activity.SplashActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -68,5 +70,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

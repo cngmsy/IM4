@@ -1,4 +1,4 @@
-package com.route.test.imchatdemo.ui;
+package com.route.test.imchatdemo.activity;
 
 import android.support.annotation.IdRes;
 import android.view.KeyEvent;
@@ -27,8 +27,6 @@ public class HomeActivity extends BaseActivity {
 
     @Override
     protected void initData() {
-
-
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
