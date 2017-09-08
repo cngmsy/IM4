@@ -132,7 +132,7 @@ public class LoginActivity extends BaseActivity {
                     pd.dismiss();
                 }
                 Intent intent = new Intent(LoginActivity.this,
-                        MainActivity.class);
+                        HomeActivity.class);
                 startActivity(intent);
                 finish();
             }

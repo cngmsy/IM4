@@ -48,7 +48,7 @@ public class SplashActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
                     }
-                        startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                        startActivity(new Intent(SplashActivity.this, HomeActivity.class));
                     finish();
                 }else {
                     try {
@@ -60,6 +60,5 @@ public class SplashActivity extends AppCompatActivity {
                 }
             }
         }).start();
-
     }
 }
