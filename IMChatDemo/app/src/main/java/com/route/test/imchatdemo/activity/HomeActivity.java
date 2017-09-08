@@ -1,12 +1,12 @@
 package com.route.test.imchatdemo.activity;
 
 import android.support.annotation.IdRes;
-import android.view.KeyEvent;
+import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.route.test.imchatdemo.R;
 import com.route.test.imchatdemo.base.BaseActivity;
@@ -23,24 +23,27 @@ public class HomeActivity extends BaseActivity {
     RadioButton rbFriends;
     RadioButton rbSet;
     RadioGroup rg;
-
+    private ImageView em_add;
 
     @Override
     protected void initData() {
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
-                if(rbChat.getId()==i){
+                if (rbChat.getId() == i) {
                     FragmentBuilder.getFragmentBuilder().containerId(R.id.MainFrameLayout).satrt(ChatFragment.class).build();
                     tvContent.setText("会话");
+                    em_add.setVisibility(View.GONE);
                 }
-                if(rbFriends.getId()==i){
+                if (rbFriends.getId() == i) {
                     FragmentBuilder.getFragmentBuilder().containerId(R.id.MainFrameLayout).satrt(FriendsFragment.class).build();
                     tvContent.setText("通讯录");
+                    em_add.setVisibility(View.VISIBLE);
                 }
-                if(rbSet.getId()==i){
+                if (rbSet.getId() == i) {
                     FragmentBuilder.getFragmentBuilder().containerId(R.id.MainFrameLayout).satrt(SetFragment.class).build();
                     tvContent.setText("设置");
+                    em_add.setVisibility(View.GONE);
                 }
             }
         });
@@ -49,11 +52,12 @@ public class HomeActivity extends BaseActivity {
     @Override
     protected void initId() {
         tvContent = findViewById(R.id.tv_content);
-        MainFrameLayout= findViewById(R.id.MainFrameLayout);
-        rbChat= findViewById(R.id.rb_chat);
-        rbFriends=findViewById(R.id.rb_friends);
-        rbSet=findViewById(R.id.rb_set);
-        rg=findViewById(R.id.rg);
+        MainFrameLayout = findViewById(R.id.MainFrameLayout);
+        rbChat = findViewById(R.id.rb_chat);
+        rbFriends = findViewById(R.id.rb_friends);
+        rbSet = findViewById(R.id.rb_set);
+        rg = findViewById(R.id.rg);
+        em_add = findViewById(R.id.em_add);
         FragmentBuilder.getFragmentBuilder().containerId(R.id.MainFrameLayout).satrt(ChatFragment.class).build();
 
     }
@@ -62,21 +66,5 @@ public class HomeActivity extends BaseActivity {
     protected int getLayout() {
         return R.layout.activity_home;
     }
-        private long firstTime = 0;
-            @Override
-            public boolean onKeyUp(int keyCode, KeyEvent event) {
-                switch (keyCode) {
-                    case KeyEvent.KEYCODE_BACK:
-                        long secondTime = System.currentTimeMillis();
-                        if (secondTime - firstTime > 2000) {
-                            Toast.makeText(HomeActivity.this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
-                            firstTime = secondTime;
-                            return true;
-                        } else {
-                            System.exit(0);
-                        }
-                        break;
-                }
-                return super.onKeyUp(keyCode, event);
-            }
+
 }

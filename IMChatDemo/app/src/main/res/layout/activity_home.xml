@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/bluesky">
+        android:background="@color/top_bar_normal_bg">
         <TextView
             android:textColor="@color/write"
             android:id="@+id/tv_content"
@@ -19,25 +19,33 @@
             android:text="会话"
             android:textSize="20dp"
             android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/em_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/em_add"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
     </RelativeLayout>
-
     <FrameLayout
         android:id="@+id/MainFrameLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
 
     <RadioGroup
+        android:background="@drawable/em_main_bottom_item_bg"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:id="@+id/rg">
         <RadioButton
             android:id="@+id/rb_chat"
             android:padding="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:button="@null"
             android:drawableTop="@drawable/em_tab_chat_bg"
             android:gravity="center"
@@ -48,12 +56,12 @@
             android:textSize="12sp"/>
         <RadioButton
             android:id="@+id/rb_friends"
-            android:padding="10dp"
+            android:padding="9dp"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:button="@null"
-            android:drawableTop="@drawable/em_tab_chat_bg"
+            android:drawableTop="@drawable/em_tab_contact_list_bg"
             android:gravity="center"
             android:background="@drawable/em_main_bottom_item_bg"
             android:text="通讯录"
@@ -61,17 +69,16 @@
             android:textSize="12sp"/>
         <RadioButton
             android:id="@+id/rb_set"
-            android:padding="10dp"
+            android:padding="11dp"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:button="@null"
-            android:drawableTop="@drawable/em_tab_chat_bg"
+            android:drawableTop="@drawable/em_tab_setting_bg"
             android:gravity="center"
             android:background="@drawable/em_main_bottom_item_bg"
             android:text="设置"
             android:textColor="@color/em_main_botton_text_color"
             android:textSize="12sp"/>
     </RadioGroup>
-
 </LinearLayout>
